@@ -16,6 +16,7 @@ public class AtmUK {
     protected ArrayList <Manejador> manejadores; // Cada manejador puede entregar dinero de una sola denominación
     private static AtmUK instance = new AtmUK();
 
+    //SINGLETON
     public static AtmUK getInstance(){
         return instance;
     }    
