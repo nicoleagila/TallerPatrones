@@ -3,15 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Patrones;
+package Facade;
+
+import Patrones.Account;
 
 /**
  *
  * @author lcsan
  */
-public class Retirar {
-    public boolean RealizarRetiro(int monto){
-        // Implementar
-        return false;
+public class Depositar {
+    Account cliente;
+    
+    public boolean Realizardeposito(double monto, int denominacion){
+        cliente.deposit(monto);
+        return true;
     }
 }
+
+
